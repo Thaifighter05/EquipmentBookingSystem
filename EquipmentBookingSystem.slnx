@@ -1,5 +1,10 @@
 <Solution>
+  <Folder Name="/Diagrams/">
+    <File Path="../../Users/maxip/Downloads/Aktivitetsdiagram.png" />
+    <File Path="../../Users/maxip/Downloads/SekvensDiagram.png" />
+  </Folder>
   <Folder Name="/Solution Items/">
+    <File Path="IMPLEMENTATION_PLAN.md" />
     <File Path="README.md" />
   </Folder>
   <Project Path="EquipmentBookingSystem.ConsoleApp/EquipmentBookingSystem.ConsoleApp.csproj" />
