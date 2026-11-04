@@ -1,11 +1,14 @@
 <Solution>
   <Folder Name="/Diagrams/">
-    <File Path="../../Users/maxip/Downloads/Aktivitetsdiagram.png" />
-    <File Path="../../Users/maxip/Downloads/SekvensDiagram.png" />
+    <File Path="../../../Downloads/AktivitetsDiagram.png" />
+    <File Path="../../../Downloads/SekvensDiagram1.png" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path="IMPLEMENTATION_PLAN.md" />
     <File Path="README.md" />
   </Folder>
-  <Project Path="EquipmentBookingSystem.ConsoleApp/EquipmentBookingSystem.ConsoleApp.csproj" />
+  <Project Path="EquipmentBookingSystem.ConsoleApp/EquipmentBookingSystem.Domain.csproj" />
+  <Project Path="EquipmentBookingSystem.Domain/EquipmentBookingSystem.Application.csproj" Id="78f5ac53-281e-4cb3-b27c-cdcae28c1767" />
+  <Project Path="EquipmentBookingSystem.Infrastructure/EquipmentBookingSystem.Infrastructure.csproj" Id="9b12fdc8-09f0-4a8b-b37d-4ea22ba537e7" />
+  <Project Path="EquipmentBookingSystem.Presentation/EquipmentBookingSystem.Presentation.csproj" Id="d74ac518-0121-4520-bdcb-9e5e4bb6c600" />
 </Solution>
