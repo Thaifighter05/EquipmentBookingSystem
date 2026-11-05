@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EquipmentBookingSystem.ConsoleApp\EquipmentBookingSystem.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

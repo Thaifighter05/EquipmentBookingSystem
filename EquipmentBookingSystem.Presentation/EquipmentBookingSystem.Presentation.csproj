@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EquipmentBookingSystem.ConsoleApp\EquipmentBookingSystem.Domain.csproj" />
+    <ProjectReference Include="..\EquipmentBookingSystem.Domain\EquipmentBookingSystem.Application.csproj" />
+    <ProjectReference Include="..\EquipmentBookingSystem.Infrastructure\EquipmentBookingSystem.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
