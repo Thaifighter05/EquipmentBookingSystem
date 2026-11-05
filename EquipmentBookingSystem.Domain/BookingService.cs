@@ -1,5 +1,4 @@
-﻿
-using EquipmentBookingSystem.Domain;
+﻿using EquipmentBookingSystem.Domain;
 
 namespace EquipmentBookingSystem.Application;
 
@@ -7,6 +6,7 @@ public class BookingService
 {
     private readonly AvailabilityService _availabilityService;
 
+    // Dependency Injection via konstruktorn
     public BookingService(AvailabilityService availabilityService)
     {
         _availabilityService = availabilityService;
@@ -35,7 +35,7 @@ public class BookingService
                 endDate
             );
 
-        // Steg 6–18 implementerar vi senare.
+        // Steg 10–18 implementerar vi senare
         throw new NotImplementedException();
     }
 
