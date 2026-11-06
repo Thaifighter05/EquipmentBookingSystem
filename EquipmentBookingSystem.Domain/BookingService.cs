@@ -1,15 +1,19 @@
-﻿using EquipmentBookingSystem.Domain;
+﻿
+using EquipmentBookingSystem.Domain;
 
 namespace EquipmentBookingSystem.Application;
 
 public class BookingService
 {
     private readonly AvailabilityService _availabilityService;
+    private readonly BookingNumberGenerator _bookingNumberGenerator;
 
-    // Dependency Injection via konstruktorn
-    public BookingService(AvailabilityService availabilityService)
+    public BookingService(
+        AvailabilityService availabilityService,
+        BookingNumberGenerator bookingNumberGenerator)
     {
         _availabilityService = availabilityService;
+        _bookingNumberGenerator = bookingNumberGenerator;
     }
 
     public BookingResult CreateBooking(
@@ -32,10 +36,20 @@ public class BookingService
             _availabilityService.FindAvailableItem(
                 modelId,
                 startDate,
-                endDate
-            );
+                endDate);
 
-        // Steg 10–18 implementerar vi senare
+        // Steg 10: Inget ledigt exemplar hittades
+        if (availableItem == null)
+        {
+            return BookingResult.Failure("Utrustningen är upptagen");
+        }
+
+        // Steg 11: Generera bokningsnummer
+        // Steg 12: Ta emot bokningsnumret
+        Guid bookingNumber =
+            _bookingNumberGenerator.GenerateBookingNumber();
+
+        // Steg 13–18 implementerar vi senare
         throw new NotImplementedException();
     }
 
